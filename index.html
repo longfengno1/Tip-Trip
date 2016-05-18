@@ -1,134 +1,402 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>A Pen by  longfengno1</title>
-    
-    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<html>
+<head>
+<title>Tip &amp; Trip</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="TipTrip,高考,大学,咨询,上海,教育" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+				$('.theme-login').click(function(){
+					$('.theme-popover-mask').fadeIn(100);
+					$('.theme-popover').slideDown(200);
+				});
+				$('.theme-poptit .close').click(function(){
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover').slideUp(200);
+				});
+				$('.theme-login1').click(function(){
+					$('.theme-popover-mask').fadeIn(100);
+					$('.theme-popover1').slideDown(200);
+				});
+				$('.theme-poptit1 .close').click(function(){
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover1').slideUp(200);
+				});
+			});
+			
+</script>
 
-        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header-banner">
+		<div class="container">			
+			<div class="header-top row">
+				<div class="top-menu">
+					<ul>
+					<nav class="cl-effect-13">
+					<div>
+						<li><img src="images/TipTrip-logo.png" class="img-responsive"></li>
+						<li><a class="scroll" href="index.html">主页</a></li>
+						<li><a href="javascript:;" class="theme-login">登陆</a></li>
+						<li><a href="javascript:;" class="theme-login1">注册</a></li>
+						<li><a href="#" style="display:none">个人中心</a></li>
+						<li><a href="#about">关于我们</a></li>
+						<li><p style="display:none">欢迎，XXX</p></li>
+					</div>
+					</nav>
+					</ul>
+				</div>	
+				<div class="social-icons visible-lg visible-md visible-sm">
+					<form class="form-inline"role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+				</div>				
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( ".top-menu ul" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
 
-    
-    
-    
-  </head>
-
-  <body>
-
-    <body body style="background-image:url(http://7xs74n.com1.z0.glb.clouddn.com/51bb074bc4e48.jpg);background-position:center; background-repeat:repeat-y;padding-top:20px">
-  <center>
-    <div class="container-fluid" id="wapper">
-      <div id="main-content">
-        <!--title-->
-        <div class="content">
-          <div class="content-logo">
-            <a href="#" target="_blank">
-              <img src="http://7xs74n.com1.z0.glb.clouddn.com/Logo.jpg" class="img-responsive" id="logo">
-              </p>
-            </a>
-          </div>
-        </div>
-        <!--register-->
-        <div class="row content">
-          <div class="col-md-9 col-sm-9 main" style="border:1px solid #FFF">
-            <h2>注册Tip&Trip <b>|</b></h2>
-            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:black,direction:145,strength:15)" width="100%" color=#987cb9 SIZE=2>
-            <div>
-              <form class="form-horizontal" role="form">
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="banner-info text-center">
+				<h1><a href="index.html">Tip & Trip</a></h1>
+			</div>
+			<div class="header-bottom-grids text-center">
+				<div class="header-bottom-grid1">
+					<span class="glyphicon glyphicon-user"></span>					
+					<h4>信息大本<br/>营</h4>
+				</div>
+				<div class="header-bottom-grid2">
+					<span class="glyphicon glyphicon-hand-up"></span>
+					<h4>答疑解惑<br/>区</h4>
+				</div>
+				<div class="header-bottom-grid3">
+					<span class="glyphicon glyphicon-screenshot"></span>
+					<h4>高校直播<br/>间</h4>
+				</div>
+				<div class="header-bottom-grid4">
+					<span class="glyphicon glyphicon-flag"></span>
+					<h4>精品大学<br/>游</h4>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- header-section-ends -->
+	<!--signin-->
+	<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="form-horizontal" role="form" name="loginform" action="" method="post">
                 <div class="form-group">
-                  <label for="name" class="col-sm-3 col-md-2 control-label">用户名</label>
-                  <div class="col-sm-6 col-md-6">
-                    <input type="text" class="form-control" id="tname" placeholder="请输入用户名">
-                  </div>
-                </div>
+					<label for="user" class="col-sm-3 control-label">用户名</label>
+					<div class="col-sm-9">
+						<input id="user" type="text" class="form-control" placeholder="请输入用户名" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-3 control-label">密码</label>
+					<div class="col-sm-9">
+						<input id="pass" type="password" class="form-control" placeholder="请输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> 保持我的状态</label>
+				</div>
+				<div class="form-group">
+					<div>
+						<button type="submit" class="btn btn-default">登录</button>
+					</div>
+				</div>
+           </form>
+		   <hr style=" height:2px;border:none;border-top:2px solid #185598;">
+				<div>
+					<a href="#">忘记密码?</a>
+				</div>
+     </div>
+	 </div>
+	<!--signin-ends-->
+	<!--signup-start-->
+	<div class="theme-popover1">
+     <div class="theme-poptit1">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="form-horizontal" role="form" name="loginform" action="" method="post">
                 <div class="form-group">
-                  <label for="email" class="col-sm-3 col-md-2 control-label">邮箱</label>
-                  <div class="col-sm-6 col-md-6">
-                    <input type="text" class="form-control" id="email" placeholder="email@example.com">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="password" class="col-sm-3 col-md-2 control-label">密码</label>
-                  <div class="col-sm-6 col-md-6">
-                    <input type="password" class="form-control" id="password" placeholder="请输入密码">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="repassword" class="col-sm-3 col-md-2 control-label">确认密码</label>
-                  <div class="col-sm-6 col-md-6">
-                    <input type="password" class="form-control" id="repassword" placeholder="请再次输入密码">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-3 col-md-2 control-label">您的身份</label>
-
-                  <div class="col-sm-6 col-md-6">
-                  <label class="checkbox-inline">
-      <input type="radio" name="optionsRadiosinline" id="optionsRadios1" 
-         value="option1" checked> 高中生
-   </label>
-                 <label class="checkbox-inline">
-      <input type="radio" name="optionsRadiosinline" id="optionsRadios2" 
-         value="option2"> 家长
-   </label>
-                 <label class="checkbox-inline">
-      <input type="radio" name="optionsRadiosinline" id="optionsRadios3" 
-         value="option3"> 大学生
-   </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-3 col-md-offset-3 col-sm-10 col-md-10">
-                    <button type="submit" class="btn btn-lg">注册</button>
-                  </div>
-                </div>
-              </form>
+					<label for="user" class="col-sm-4 col-md-4 control-label">用户名</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="user" type="text" class="form-control" placeholder="请输入用户名" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-4 col-md-4 control-label">密码</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="pass" type="password" class="form-control" placeholder="请输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-4 col-md-4 control-label">重复密码</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="pass" type="password" class="form-control" placeholder="请再次输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">  
+					<label for="email" class="col-sm-4 col-md-4 control-label">邮箱</label>  
+					<div class="col-sm-8 col-md-8">  
+						<input name="email" type="text" placeholder="请输入邮箱" class="form-control" required pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$" title="邮箱正确格式：Email@example.com">  
+					</div>  
+				</div>
+				<div class="form-group">
+					<div>
+						<button type="submit" class="btn btn-default">注册</button>
+					</div>
+				</div>
+           </form>
+     </div>
+	 </div>
+	 <!--signup-end-->
+	<!-- content-section-starts -->
+	<div class="services">
+		<div class="container">
+			<div class="text-center">
+				<div class="secvice-top-grid-1">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<a href="#"><i class="icon1"></i></a>
+					</div>
+				</div>
+				<div class="secvice-top-grid-2">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<a href="question.html"><i class="icon2"></i></a>
+					</div>
+				</div>
+				<div class="secvice-top-grid-3">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<a href="#"><i class="icon3"></i></a>
+					</div>
+				</div>
+				<div class="secvice-top-grid-4">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<a href="#"><i class="icon4"></i></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="items">
+		<div class="container">
+			<h2>特聘专家</h2>
+			<hr style=" height:2px;border:none;border-top:2px solid #BBBBBB;">
+			<div class="col-md-4 col-sm-4 item-1 text-center">
+				<img src="images/icon1.png" alt="" />
+				<div class="list-description">
+					<ul style="list-style-type:none">
+						<li>姓名：XXX</li>
+						<li>学校：XXXX</li>
+						<li>头衔：XXX</li>
+						<li>荣誉：XXXX;XXXX;XXXX。</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 item-2 text-center">
+				<img src="images/icon1.png" alt="" />
+				<div class="list-description">
+					<ul style="list-style-type:none">
+						<li>姓名：XXX</li>
+						<li>学校：XXXX</li>
+						<li>头衔：XXX</li>
+						<li>荣誉：XXXX;XXXX;XXXX。</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 item-3 text-center">
+				<img src="images/icon1.png" alt="" />
+				<div class="list-description">
+					<ul style="list-style-type:none">
+						<li>姓名：XXX</li>
+						<li>学校：XXXX</li>
+						<li>头衔：XXX</li>
+						<li>荣誉：XXXX;XXXX;XXXX。</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- carousel -->
+	<div class="container">
+	      <div class="mcs">
+		  
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <!-- 轮播（Carousel）指标 -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- 轮播（Carousel）项目 -->
+          <div class="carousel-inner">
+            <div class="item active" >
+              <img src="images/carsoucel1.png" alt="First slide">
+              <div class="carousel-caption">
+                标题 1
+                <p>This is a picture description.</p>
+              </div>
             </div>
-            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:black,direction:145,strength:15)" width="100%" color=#987cb9 SIZE=2>
-
-          </div>
-          <div class="col-md-3 col-sm-3 main">
-            <div class="login">
-              <form role="form">
-                <div class="form-group">
-                  <label for="login">已有Tip&Trip账号</label>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-lg col-sm-offset-2 col-md-offset-2" id="login">登陆</button>
-                </div>
-              </form>
+            <div class="item">
+              <img src="images/carsoucel1.png" alt="Second slide">
+              <div class="carousel-caption">
+				  标题 2
+				  <p>This is a picture description.</p>
+			  </div>
+            </div>
+            <div class="item">
+              <img src="images/carsoucel1.png" alt="Third slide">
+              <div class="carousel-caption">
+				标题 3
+				<p>This is a picture description.</p>
+			  </div>
             </div>
           </div>
+		  </div>
+         <!-- 轮播（Carousel）导航 -->
+         <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+			<!-- 箭头图片 -->
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+  
+		<a href="#myCarousel" class="right carousel-control" data-slide="next">
+			<!-- 箭头图片 -->
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
         </div>
-        <!--footer-->
       </div>
-      <footer class="foot">
-        <hr>
-        <div class="row">
-          <form class="form-inline" role="form">
-            <div class="form-group ">
-              <p>Written and coded by <a href="https://github.com/longfengno1" target="_blank">Xiao</a>.</p>
-            </div>
-            <div class="form-group col-sm-offset-3 col-md-offset-3">
-              <p>联系我们:</p>
-            </div>
-            <div class="form-group">
-              <a href="https://cn.linkedin.com/in/啸-章-424734108" target="_blank"><img src="http://7xs74n.com1.z0.glb.clouddn.com/LinkedIn.png" alt="LinkedIn"></a>
-            </div>
-            <div class="form-group">
-              <a href="https://github.com/longfengno1" target="_blank"><img src="http://7xs74n.com1.z0.glb.clouddn.com/Github.png" alt="Github"></a>
-            </div>
-        </div>
-      </footer>
-    </div>
-  </center>
+	
+	<div class="bannerLong"></div>
+	<!-- news -->
+	<div class="news" id="news">
+		<div class="container">
+			<div class="news-text">
+				<h3>高校展示</h3>
+				<h5>Cras porttitor imperdiet volutpat nulla malesuada lectus eros <span>ut convallis felis consectetur ut </span></h5>
+			</div>
+			<div class="news-grids">
+				<div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<a href="single.html">东华大学</a>
+					<span>8.00 - 10.00 | JUN 09,2014</span>
+					<a class="mask" href="single.html"><img src="images/img1.jpg" class="img-responsive zoom-img" alt="" /></a>
+					<div class="news-info">
+						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<a href="single.html">东华大学</a>
+					<span>10.00 - 12.00 | SEP 24,2014</span>
+					<a class="mask" href="single.html"><img src="images/img2.jpg" class="img-responsive zoom-img" alt="" /></a>
+					<div class="news-info">
+						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<a href="single.html">东华大学</a>
+					<span>9.00 - 10.00 | FEB 15,2014</span>
+					<a class="mask" href="single.html"><img src="images/img3.jpg" class="img-responsive zoom-img" alt="" /></a>
+					<div class="news-info">
+						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<a href="single.html">东华大学</a>
+					<span>11.00 - 10.00 | JUN 10,2014</span>
+					<a class="mask" href="single.html"><img src="images/img4.jpg" class="img-responsive zoom-img" alt="" /></a>
+					<div class="news-info">
+						<p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+						<a class="button" href="single.html"><img src="images/read.png" alt=""></a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //news -->
+	<!-- content-section-ends -->
+	<div class="get-in-touch">
+			<div class="container">
+				<div class="col-md-3 gin">
+					<h3>这是LOGO</h3>
+				</div>
+				<div class="col-md-6 address">
+					<h3>这是介绍。。。</h3>
+				</div>
+				<div class="col-md-3 dal">
+					<h3>这是二维码</h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	<!-- footer-section -->
+	<!-- footer-section -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+	</script>
+	<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!----> 
+	<div class="theme-popover-mask"></div>
 </body>
-    
-    
-    
-    
-    
-  </body>
 </html>

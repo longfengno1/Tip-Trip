@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>答疑解惑区</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="TipTrip,高考,大学,咨询,上海,教育" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+				$('.theme-login').click(function(){
+					$('.theme-popover-mask').fadeIn(100);
+					$('.theme-popover').slideDown(200);
+				});
+				$('.theme-poptit .close').click(function(){
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover').slideUp(200);
+				});
+				$('.theme-login1').click(function(){
+					$('.theme-popover-mask').fadeIn(100);
+					$('.theme-popover1').slideDown(200);
+				});
+				$('.theme-poptit1 .close').click(function(){
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover1').slideUp(200);
+				});
+			});
+			function scrollt(id)
+				{
+					var cc=document.getElementById(id);
+					cc.scrollIntoView();
+				}
+</script>
+</script>
+
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="about-header-banner">
+		<div class="container">			
+			<div class="header-top">
+				<span class="menu"><img src="images/nav.png" alt=""/></span>
+				<div class="top-menu">
+					<ul>
+					<nav class="cl-effect-13">
+					<div>
+						<li><img src="images/TipTrip-logo.png" class="img-responsive"></li>
+						<li><a href="index.html">主页</a></li>
+						<li><a href="javascript:;" class="theme-login">登陆</a></li>
+						<li><a class="scroll" href="#">注册</a></li>
+						<li><a href="#" style="display:none">个人中心</a></li>
+						<li><a href="#about">关于我们</a></li>
+						<li><p style="display:none">欢迎，XXX</p></li>
+					</div>
+					</nav>
+					</ul>
+				</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="banner-info text-center">
+				<h1><a href="question.html">答疑解惑区</a></h1>
+			</div>				
+		</div>
+	</div>		
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( ".top-menu ul" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+	<!-- header-section-ends -->
+	<!--signin-->
+	<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="form-horizontal" role="form" name="loginform" action="" method="post">
+                <div class="form-group">
+					<label for="user" class="col-sm-3 control-label">用户名</label>
+					<div class="col-sm-9">
+						<input id="user" type="text" class="form-control" placeholder="请输入用户名" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-3 control-label">密码</label>
+					<div class="col-sm-9">
+						<input id="pass" type="password" class="form-control" placeholder="请输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> 保持我的状态</label>
+				</div>
+				<div class="form-group">
+					<div>
+						<button type="submit" class="btn btn-default">登录</button>
+					</div>
+				</div>
+           </form>
+		   <hr style=" height:2px;border:none;border-top:2px solid #185598;">
+				<div>
+					<a href="#">忘记密码?</a>
+				</div>
+     </div>
+	 </div>
+	<!--signin-ends-->
+	<!--signup-start-->
+	<div class="theme-popover1">
+     <div class="theme-poptit1">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="form-horizontal" role="form" name="loginform" action="" method="post">
+                <div class="form-group">
+					<label for="user" class="col-sm-4 col-md-4 control-label">用户名</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="user" type="text" class="form-control" placeholder="请输入用户名" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-4 col-md-4 control-label">密码</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="pass" type="password" class="form-control" placeholder="请输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-4 col-md-4 control-label">重复密码</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="pass" type="password" class="form-control" placeholder="请再次输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">  
+					<label for="email" class="col-sm-4 col-md-4 control-label">邮箱</label>  
+					<div class="col-sm-8 col-md-8">  
+						<input name="email" type="text" placeholder="请输入邮箱" class="form-control" required pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$" title="邮箱正确格式：Email@example.com">  
+					</div>  
+				</div>
+				<div class="form-group">
+					<div>
+						<button type="submit" class="btn btn-default">注册</button>
+					</div>
+				</div>
+           </form>
+     </div>
+	 </div>
+	 <!--signup-end-->
+	 <div class="search-area-wrapper">
+        <div class="search-area container">
+				<form class="form-inline search-form" role="form">
+					<div class="form-group" style="float:left">
+						<button class="btn btn-default btn-lg" onclick="scrollt('coment-form'); return false;">我要提问</button>
+					</div>
+					<div class="form-group" style="float:right">
+						<button class="btn btn-default">搜索</button>
+					</div>
+					<div class="form-group" style="float:right;margin-right:10px">
+						<input type="text" class="form-control" id="searchtxt" placeholder="请输入关键字">
+					</div>				
+                </form>
+		</div>
+     </div>
+	 <div class="page-container">
+		<div class="container">
+		<div class="row">                              
+		<!-- start of page content -->
+        <div class="col-md-8 col-sm-8 col-lg-9 main-listing">
+			<article class="format-standard type-post hentry clearfix">
+				<header class="clearfix">
+					<h3 class="post-title">
+						<a href="single.html">Integrating WordPress with Your Website</a>
+					</h3>
+					<div class="post-meta clearfix">
+						<span class="date">25 Feb, 2013</span>
+						<span class="category"><a href="#" title="View all posts in Server &amp; Database">Server &amp; Database</a></span>
+						<span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">3 Comments</a></span>
+						<span class="like-count">66</span>
+					</div><!-- end of post meta -->
+				</header>
+				<p>Many of us work in an endless stream of tasks, browser tasks, social media, emails, meetings, rushing from one thing to another, never pausing and never ending.&nbsp;Then the day is over, and we are exhausted, and we often have very little to show for it. And we start the next . . . <a class="readmore-link" href="http://knowledgebase.inspirythemes.com/integrating-wordpress-with-your-website/">Read more</a></p>
+			</article>
+			<article class="format-standard type-post hentry clearfix">
+				<header class="clearfix">
+					<h3 class="post-title">
+						<a href="single.html">Integrating WordPress with Your Website</a>
+					</h3>
+					<div class="post-meta clearfix">
+						<span class="date">25 Feb, 2013</span>
+						<span class="category"><a href="#" title="View all posts in Server &amp; Database">Server &amp; Database</a></span>
+						<span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">3 Comments</a></span>
+						<span class="like-count">66</span>
+					</div><!-- end of post meta -->
+				</header>
+				<p>Many of us work in an endless stream of tasks, browser tasks, social media, emails, meetings, rushing from one thing to another, never pausing and never ending.&nbsp;Then the day is over, and we are exhausted, and we often have very little to show for it. And we start the next . . . <a class="readmore-link" href="http://knowledgebase.inspirythemes.com/integrating-wordpress-with-your-website/">Read more</a></p>
+			</article>
+			<article class="format-standard type-post hentry clearfix">
+				<header class="clearfix">
+					<h3 class="post-title">
+						<a href="single.html">Integrating WordPress with Your Website</a>
+					</h3>
+					<div class="post-meta clearfix">
+						<span class="date">25 Feb, 2013</span>
+						<span class="category"><a href="#" title="View all posts in Server &amp; Database">Server &amp; Database</a></span>
+						<span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">3 Comments</a></span>
+						<span class="like-count">66</span>
+					</div><!-- end of post meta -->
+				</header>
+				<p>Many of us work in an endless stream of tasks, browser tasks, social media, emails, meetings, rushing from one thing to another, never pausing and never ending.&nbsp;Then the day is over, and we are exhausted, and we often have very little to show for it. And we start the next . . . <a class="readmore-link" href="http://knowledgebase.inspirythemes.com/integrating-wordpress-with-your-website/">Read more</a></p>
+			</article>
+			<article class=" type-post format-image hentry clearfix">
+				<header class="clearfix">
+					<h3 class="post-title">
+						<a href="single.html">Using Images</a>
+					</h3>
+					<div class="post-meta clearfix">
+					<span class="date">25 Feb, 2013</span>
+					<span class="category"><a href="#" title="View all posts in Designing in WordPress">Designing in WordPress</a></span>
+					<span class="comments"><a href="#" title="Comment on Using Images">0 Comments</a></span>
+					<span class="like-count">7</span>
+				</div><!-- end of post meta -->
+				</header>
+				<a href="#" title="Using Images"><img src="images/living-room-770x501.jpg" class="attachment-std-thumbnail wp-post-image" alt="Living room"></a>
+				<p>Many of us work in an endless stream of tasks, browser tasks, social media, emails, meetings, rushing from one thing to another, never pausing and never ending.&nbsp;Then the day is over, and we are exhausted, and we often have very little to show for it. And we start the next . . . <a class="readmore-link" href="http://knowledgebase.inspirythemes.com/using-images/">Read more</a></p>
+			</article>
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+			<div class="coment-form" id="coment-form">
+					<h2 style="margin-bottom:0px">提问</h2>
+					<hr style="margin-top:0px; height:1px;border:none;border-top:1px solid #BBBBBB;">
+					<form role="form">
+						<div class="form-group">
+							<input type="text"placeholder="请输入问题" required>
+						</div>
+						<div class="form-group">
+							<textarea type="text"  placeholder="请输入问题的详细描述..." required></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="提交问题">
+						</div>
+					</form>
+				</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-lg-3">
+		<section class="widget"><h3 class="title">Categories</h3>
+			<ul>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">Advanced Techniques</a> </li>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">Designing in WordPress</a></li>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">Server &amp; Database</a></li>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">Theme Development</a></li>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">Website Dev</a></li>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">WordPress for Beginners</a></li>
+				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">WordPress Plugins</a></li>
+			</ul>
+		</section>
+		<section class="widget">
+            <div class="support-widget">
+                <h3 class="title">Support</h3>
+                <p class="intro">Need more support? If you did not found an answer, contact us for further help.</p>
+            </div>
+        </section>
+		</div>
+		</div>
+	 </div>
+	 </div>
+	<!-- footer-section -->
+	<div class="get-in-touch">
+			<div class="container">
+				<div class="col-md-3 gin">
+					<h3>这是LOGO</h3>
+				</div>
+				<div class="col-md-6 address">
+					<h3>这是介绍。。。</h3>
+				</div>
+				<div class="col-md-3 dal">
+					<h3>这是二维码</h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	<!-- footer-section -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+	</script>
+	<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!----> 
+</body>
+</html>
