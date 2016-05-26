@@ -906,6 +906,12 @@ a.button img {
   margin: 0 0px 20px 0;
   padding: 0;
 }
+.about-top strong{
+	font-size:2em;
+}
+.about-top .label{
+	font-size:1.12em;
+}
 .abt_img1{
 	width:35%;
 	margin-left:11%;
@@ -929,11 +935,18 @@ a.button img {
 }
 .whyus p {
 	color: #fff;
-	font-weight: 400;
-	font-size: 0.965em;
+	font-size: 1.2em;
 	line-height: 1.8em;
 	margin: 15px 0 0 0;
 	font-weight:300;
+}
+.whyus li{
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.8em;
+	margin: 15px 0 0 0;
+	font-weight:300;
+	text-align:left;
 }
 .whyus span {
 	margin-top: 15px;
@@ -958,7 +971,22 @@ a.button img {
 	font-weight: 300;
 	letter-spacing: 2px;
 	margin-bottom: 0.8em;
-	  padding: 0;
+	padding: 0;
+}
+.kouhao p{
+	color:#fff;
+	font-size:2em;
+	font-weight:300;
+	margin: 15px 0 0 0;
+	text-align:center;
+}
+.wanted p{
+	color: #ADB8B0;
+	text-align:left;
+	text-indent:2em;
+	font-size:1.5em;
+	font-weight:300;
+	margin: 15px 0 0 0;
 }
 .ch-grid {
 	padding: 0;

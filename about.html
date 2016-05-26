@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About</title>
+<title>关于我们</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="TipTrip,高考,大学,咨询,上海,教育" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.useso.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -25,34 +25,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
 				});
+				$('.theme-login').click(function(){
+					$('.theme-popover-mask').fadeIn(100);
+					$('.theme-popover').slideDown(200);
+				});
+				$('.theme-poptit .close').click(function(){
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover').slideUp(200);
+				});
+				$('.theme-login1').click(function(){
+					$('.theme-popover-mask').fadeIn(100);
+					$('.theme-popover1').slideDown(200);
+				});
+				$('.theme-poptit1 .close').click(function(){
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover1').slideUp(200);
+				});
 			});
+			function scrollt(id)
+				{
+					var cc=document.getElementById(id);
+					cc.scrollIntoView();
+				}
 </script>
+</script>
+
 </head>
 <body>
 	<!-- header-section-starts -->
 	<div class="about-header-banner">
-		<div class="container">
-			<div class="home">
-					<a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
-			</div>
+		<div class="container">			
 			<div class="header-top">
-				<div class="social-icons">
-					<i class="facebook"></i>
-					<i class="twitter"></i>
-					<i class="googlepluse"></i>
-				</div>
 				<span class="menu"><img src="images/nav.png" alt=""/></span>
 				<div class="top-menu">
 					<ul>
 					<nav class="cl-effect-13">
-						<li><a class="active" href="about.html">About</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="index.html">News</a></li>
-						<li><a href="typography.html">Typo</a></li>
-						<li><a href="contact.html">Contact</a></li>
+					<div>
+						<li><img src="images/TipTrip-logo.png" class="img-responsive"></li>
+						<li><a href="index.html">主页</a></li>
+						<li><a href="javascript:;" class="theme-login">登陆</a></li>
+						<li><a class="scroll" href="#">注册</a></li>
+						<li><a href="#" style="display:none">个人中心</a></li>
+						<li><a href="#about">关于我们</a></li>
+						<li><p style="display:none">欢迎，XXX</p></li>
+					</div>
 					</nav>
 					</ul>
 				</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="banner-info text-center">
+				<h1><a href="question.html">Tip &amp; Trip</a></h1>
+			</div>				
+		</div>
+	</div>		
 				<!-- script for menu -->
 					<script> 
 						$( "span.menu" ).click(function() {
@@ -62,65 +89,183 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});
 					</script>
 				<!-- //script for menu -->
-				<div class="clearfix"></div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="banner-info text-center">
-				<h1><a href="index.html">Gardening</a></h1>
-			</div>
-		</div>
-	</div>
+	<!-- header-section-ends -->
+	<!--signin-->
+	<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="form-horizontal" role="form" name="loginform" action="" method="post">
+                <div class="form-group">
+					<label for="user" class="col-sm-3 control-label">用户名</label>
+					<div class="col-sm-9">
+						<input id="user" type="text" class="form-control" placeholder="请输入用户名" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-3 control-label">密码</label>
+					<div class="col-sm-9">
+						<input id="pass" type="password" class="form-control" placeholder="请输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> 保持我的状态</label>
+				</div>
+				<div class="form-group">
+					<div>
+						<button type="submit" class="btn btn-default">登录</button>
+					</div>
+				</div>
+           </form>
+		   <hr style=" height:2px;border:none;border-top:2px solid #185598;">
+				<div>
+					<a href="#">忘记密码?</a>
+				</div>
+     </div>
+	 </div>
+	<!--signin-ends-->
+	<!--signup-start-->
+	<div class="theme-popover1">
+     <div class="theme-poptit1">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="form-horizontal" role="form" name="loginform" action="" method="post">
+                <div class="form-group">
+					<label for="user" class="col-sm-4 col-md-4 control-label">用户名</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="user" type="text" class="form-control" placeholder="请输入用户名" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-4 col-md-4 control-label">密码</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="pass" type="password" class="form-control" placeholder="请输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pass" class="col-sm-4 col-md-4 control-label">重复密码</label>
+					<div class="col-sm-8 col-md-8">
+						<input id="pass" type="password" class="form-control" placeholder="请再次输入密码" required>
+					</div>
+				</div>
+				<div class="form-group">  
+					<label for="email" class="col-sm-4 col-md-4 control-label">邮箱</label>  
+					<div class="col-sm-8 col-md-8">  
+						<input name="email" type="text" placeholder="请输入邮箱" class="form-control" required pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$" title="邮箱正确格式：Email@example.com">  
+					</div>  
+				</div>
+				<div class="form-group">
+					<div>
+						<button type="submit" class="btn btn-default">注册</button>
+					</div>
+				</div>
+           </form>
+     </div>
+	 </div>
 	<!-- header-section-ends -->
 	<!-- content-section-starts -->
+	
  <div class="main">
     <div class="about-content text-center">
+	<nav class="navbar navbar-default" role="navigation">        
+            <ul class="nav nav-pills nav-justified">
+              <li><a href="#about" style="color:black">平台简介</a></li>
+              <li><a href="#strength" style="color:black">平台优势</a></li>
+              <li><a href="#team" style="color:black">平台团队</a></li>
+			  <li><a href="#contactus" style="color:black">联系我们</a></li>
+			</ul>
+      </nav>
+	  <a name="about"></a>
 			<div class="who_we_are">
 			<div class="container">
 					<div class="about-top">
 						<header>
-							<h3>Who We Are</h3>
+							<h3>平台简介</h3>
 						</header>
-						<h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</h5>
-						<p>Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p>
-						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. </p>
+						<h5 style="text-indent: 2em"><strong>Tip &amp; Trip</strong>是专业的高校信息交流平台，立足于高考生对上海高校信息的需求，旨在为大学生和高考生提供服务，是高考生和大学生间自由交流的一座桥梁。无论是考生、考生家长还是大学生，经注册后都可享受我们的服务。本平台专业提供上海高校信息，包括官方信息（办学规模、优势专业、历年录取分数）与非官方信息（高校内部消息与大学学习生活经验），通过搜集、整理与分析，将最<span class="label label-default">全面</span>、<span class="label label-default">真实</span>、<span class="label label-default">有效</span>的高校信息提供给用户。</h5>
 					</div>
 					<div class="abt_img1"><img src="images/w1.jpg" alt=""></div>
 					<div class="abt_img2"><img src="images/w2.jpg" alt=""></div>
 					<div class="clearfix"></div>
 			</div>
 		</div>
+		<a name="strength"></a>
 		<div class="why_choose_us">
 			<div class="container">
 				<div class="row">
 						<header>
-							<h3>Why choose Us</h3>
+							<h3>平台优势</h3>
 						</header>
 					</div>
-					<div class="col-md-4 whyus">
-						<div>
-							<span>01</span>
-							<p>Maecenas molesetdbus idictum. Ut neque purus, sollic alitudin non ante ac, malesuada condimentum libero. Nunc hendrerit augue vel tempor posuere. Cras consectetur.</p>
-						</div>
-					</div>
-					<div class="col-md-4 whyus">
-						<div>
-							<span>02</span>
-							<p>Maecenas molesetdbus idictum. Ut neque purus, sollic alitudin non ante ac, malesuada condimentum libero. Nunc hendrerit augue vel tempor posuere. Cras consectetur.</p>
-		
-						</div>
-					</div>
-					<div class="col-md-4 whyus">
-						<div>
-							<span>03</span>
-							<p>Maecenas molesetdbus idictum. Ut neque purus, sollic alitudin non ante ac, malesuada condimentum libero. Nunc hendrerit augue vel tempor posuere. Cras consectetur.</p>
-			
-						</div>
-					</div>
+					<ul  id="myTab" class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#kaosheng" data-toggle="tab">我是考生or家长</a></li>
+				    <li><a href="#student" data-toggle="tab">我是大学生</a></li>
+				    </ul>
+   <div id="myTabContent" class="tab-content">
+	   <div class="tab-pane fade in active" id="kaosheng">
+		  <div class="col-md-4 whyus">
+				<div>
+				<span>01</span>
+				<p>您将获得最全面、真实、有效的高校信息：</p>
+				<ul>
+					<li>本平台拥有专业的团体，广泛的信息来源，实时收集热点信息，确保信息的全面性。</li>
+					<li>本平台设有专门的技术团队，对所有的帖子和回答会进行定期的审核，确保信息的客观真实性。</li>
+					<li>本平台制定独特的标签与搜索机制，精准定位的您所需要的信息，确保信息的有效性。</li>
+					<li>本平台在确保信息客观真实的基础上倡导言论自由，用户可以发布任何关于高校的内容，考生和家长也可以提问任何有关高校的问题。</li>
+				</ul>
 			</div>
 		</div>
+		<div class="col-md-4 whyus">
+			<div>
+			<span>02</span>
+			<p>您的高校信息来源是多样化的：</p>
+				<ul>
+					<li>实名认证的在校大学生提供本校的真实资讯。</li>
+					<li>从事相关服务多年的资深特聘专家给您带来专业、权威的解答。</li>
+					<li>平台官方同时搜集、整理与分析数据，为您描绘真实高校。</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 whyus">
+			<div>
+			<span>03</span>
+			<p>不同的方式满足您不同的需求：</p>
+				<ul>
+					<li>信息大本营，让您对高校进行初步了解。</li>
+					<li>答疑解惑区，可以有针对性地回答您的问题，进一步加深你对高校的了解。</li>
+					<li>高校直播间，让您与在校大学生面对面交流，全方位了解高校真实的一面。</li>
+					<li>精品大学游，让您在旅游的同时可以进行实地考察，亲身体验高校魅力。</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-12 kouhao">
+			<p>您的问题，在这里都会找到答案。</p>
+		</div>
+		</div>
+	   <div class="tab-pane fade" id="student">
+		  <div class="wanted">
+			<p>你是不是还在苦恼大学生活的枯燥无味？</p>
+			<p>你是不是乐于帮助他人以实现人生价值？</p>
+			<p>你是不是渴望得到一份轻松的兼职工作？</p>
+			<p style="color:white">只要你有一个回答是yes，你就是我们需要的人！在这里你可以向考生解答关于大学的问题，你可以向大家展示你的学校，分析你的专业，还能分享大学学习生活的经验，在学习之余帮助他人，实现人生价值！最重要的还可以从中赚钱！本平台设置虚拟货币T币和经验值，T币由人民币等值转化而来并可提现，在这里只要你参与就有经验值和T币，经验值积累可提升等级，等级越高，赚取T币的机会越多！</p>
+			<div class="col-md-12 kouhao">
+				<p style="color:white">还在犹豫什么，快快注册加入我们吧！</p>
+				<img src="images/wantyou.jpg" alt="we want you">
+			</div>
+		  </div>
+	   </div>
+   </div>
+			</div>
+		</div>
+		<a name="team"></a>
 		<div class="team">
 		<header>
-							<h3>Our Team</h3>
+							<h3>平台团队</h3>
 						</header>
 		<section class="main">
 			
@@ -190,13 +335,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	<!-- footer-section -->
-	<div class="footer">
-		<div class="container">
-			<div class="copyright text-center">
-				<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+	<div class="get-in-touch">
+			<div class="container">
+				<div class="col-md-3 gin">
+					<h3>这是LOGO</h3>
+				</div>
+				<div class="col-md-6 address">
+					<h3>这是介绍。。。</h3>
+				</div>
+				<div class="col-md-3 dal">
+					<h3>这是二维码</h3>
+				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
 	<!-- footer-section -->
 	<script type="text/javascript">
 		$(document).ready(function() {
