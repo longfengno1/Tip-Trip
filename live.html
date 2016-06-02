@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tip &amp; Trip</title>
+<title>高校直播间</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -42,7 +42,12 @@
 					$('.theme-popover1').slideUp(200);
 				});
 			});
-			
+			function scrollt(id)
+				{
+					var cc=document.getElementById(id);
+					cc.scrollIntoView();
+				}
+</script>
 </script>
 
 </head>
@@ -58,10 +63,10 @@
 					<div>
 						<li><img src="images/TipTrip-logo.png" class="img-responsive"></li>
 						<li><a href="index.html">主页</a></li>
-						<li><a href="javascript:;" class="theme-login">登陆</a></li>
+						<li><a href="javascript:;" class="theme-login">登录</a></li>
 						<li><a class="scroll" href="#">注册</a></li>
 						<li><a href="#" style="display:none">个人中心</a></li>
-						<li><a href="#about">关于我们</a></li>
+						<li><a href="about.html">关于我们</a></li>
 						<li><p style="display:none">欢迎，XXX</p></li>
 					</div>
 					</nav>
@@ -71,7 +76,7 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="banner-info text-center">
-				<h1><a href="question.html">答疑解惑区</a></h1>
+				<h1><a href="question.html">Tip & Trip</a></h1>
 			</div>				
 		</div>
 	</div>		
@@ -163,112 +168,8 @@
      </div>
 	 </div>
 	 <!--signup-end-->
-	 <div class="page-container">
-		<div class="container">
-		<div class="row">                              
-		<!-- start of page content -->
-        <div class="col-md-8 col-sm-8 col-lg-9 main-listing">
-			<ul class="breadcrumb">
-                <li><a href="question.html">答疑解惑区</a><span class="divider"></span></li>
-                <li><a href="#" title="View all posts in Server &amp; Database">志愿填报</a> <span class="divider"></span></li>
-                <li class="active">广西考生平时成绩超一本线五十几分，我应报读哪个大学比较好？</li>
-            </ul>
-			 <article class=" type-post format-standard hentry clearfix">
-				<h1 class="post-title"><a href="#">广西考生平时成绩超一本线五十几分，我应报读哪个大学比较好？</a></h1>
-				<div class="post-meta clearfix">
-					<span class="date">25 Feb, 2013</span>
-					<span class="category"><a href="#" title="View all posts in Server &amp; Database">志愿填报<a>、<a href="#">考前咨询</a></span>
-					<span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">回答数：2</a></span>
-					<span class="like-count">66</span>
-                </div>
-				<!-- end of post meta -->
-				<p style="text-indent:2em">今年高三，还有九天高考，可是近几次模考都是一本线下十几分，每一次都是有一科不理想，每一次不理想的科目还都不是同一科。真的挺担心因为中考的时候是模拟考不理想中考也不理想，担心高考。我想去一个一本学校读广告，可是我怎么觉得这个梦想这么难实现了呢。最后9天了非常的没动力，有一种快到头了的感觉，接下来就是适应性考试，接着自习然后就高考了。我不是想来问问有没有希望之类的没有用的话，我只是想要一个坚持下去的理由。最后九天，我该做些什么？</p>
-			</article>
-			<div class="response">
-					<h4>回答</h4>
-					<div class="media response-info">
-						<div class="media-left response-text-left">
-							<a href="#">
-								<img class="media-object" src="images/icon1.png" alt=""/>
-							</a>
-							<h5><a href="#">Admin</a></h5>
-						</div>
-						<div class="media-body response-text-right">
-							<p style="text-indent:2em">你很务实啊。是的，最后这几天的确改变不了什么了，这几天主要是调整调整心态，看看争取高考正常发挥。朋友，高中这三年起的比鸡早，吃的比猪差，干的比牛多，睡的比狗晚，再过九天你就解放了，你还要放弃，你还想复读再过一年猪狗不如的日子么？！关于大学先别想那么多，有分数才有选择的权利。
-</p>
-							<ul>
-								<li>June 21, 2015</li>
-								<li><div class="like-btn">
-								<form id="like-it-form" action="#" method="post">
-								<span class="like-it">66</span>
-									<input type="hidden" name="post_id" value="99">
-									<input type="hidden" name="action" value="like_it">
-								</form>
-							</div></li>
-							</ul>
-						<div class="clearfix"> </div>
-					</div>
-					</div>
-					<div class="media response-info">
-						<div class="media-left response-text-left">
-							<a href="#">
-								<img class="media-object" src="images/icon1.png" alt=""/>
-							</a>
-							<h5><a href="#">Admin</a></h5>
-						</div>
-						<div class="media-body response-text-right">
-							<p style="text-indent:2em">你这是太紧张了。我高考的时候也是这样。要积极的心理暗示啊，你想想我们做了多少卷子，什么题没见过，还怕这个，这道题我肯定会做！深呼吸两下，想想以前受的苦！我当年就是这么做的，最后全做出来了！有希望！一般都会比平时多几十分，高考的题很正常，没有歧义。</p>
-							<ul>
-								<li>June 21, 2063</li>
-								<li><div class="like-btn">
-								<form id="like-it-form" action="#" method="post">
-								<span class="like-it">66</span>
-									<input type="hidden" name="post_id" value="99">
-									<input type="hidden" name="action" value="like_it">
-								</form>
-							</div></li>
-							</ul>		
-						</div>
-					</div>
-						<div class="clearfix"> </div>
-					</div>
-				<div class="coment-form" id="coment-form">
-					<h2 style="margin-bottom:0px">回答</h2>
-					<hr style="margin-top:0px; height:1px;border:none;border-top:1px solid #BBBBBB;">
-					<form role="form">
-						<div class="form-group">
-							<textarea type="text"  placeholder="请输入你的回答..." required></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="提交回答">
-						</div>
-					</form>
-				</div>
-		</div>
-		<div class="col-md-4 col-sm-4 col-lg-3">
-		<section class="widget"><h3 class="title">分类</h3>
-			<ul>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">填报志愿</a> </li>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">考前咨询</a></li>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">快速提分</a></li>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">心理疏导</a></li>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">大学生活</a></li>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">上海高校</a></li>
-				<li><a href="#" title="Lorem ipsum dolor sit amet," class="list-group-item">未来规划</a></li>
-			</ul>
-		</section>
-		<section class="widget">
-            <div class="support-widget">
-                <h3 class="title">帮助</h3><br/>
-                <p class="intro">仍需要帮助？如果你还是没有解决问题，你可以联系我们获得进一步的帮助。</p>
-            </div>
-        </section>
-		</div>
-		</div>
-	 </div>
-	 </div>
-	<!-- footer-section -->
-	<div class="get-in-touch">
+	 <h1>还在建设中...</h1>
+	 	<div class="get-in-touch">
 			<div class="container">
 				<div class="col-md-3 gin">
 					<h3>这是LOGO</h3>
